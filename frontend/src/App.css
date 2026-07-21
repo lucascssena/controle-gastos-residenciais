@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  margin-bottom: 4px;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coluna-larga {
+  grid-column: 1 / -1;
+}
+
+.cartao {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.cartao h3 {
+  margin-top: 0;
+}
+
+.formulario .campo {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formulario label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #52606d;
+}
+
+.formulario input,
+.formulario select {
+  padding: 8px 10px;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button {
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.botao-perigo {
+  background: #dc2626;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid #e4e7eb;
+  font-size: 0.9rem;
+}
+
+.linha-total-geral td {
+  font-weight: 700;
+  border-top: 2px solid #1f2933;
+  border-bottom: none;
+}
+
+.valor-positivo {
+  color: #15803d;
+}
+
+.valor-negativo {
+  color: #b91c1c;
+}
+
+.etiqueta-receita {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.etiqueta-despesa {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.etiqueta-menor {
+  margin-left: 6px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.mensagem-erro {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  margin: 4px 0;
+}
+
+.mensagem-erro-global {
+  border-left: 4px solid #b91c1c;
+}
+
+.texto-vazio {
+  color: #9aa5b1;
+  font-style: italic;
+}
+
+.dica {
+  color: #92400e;
+}
+
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}
