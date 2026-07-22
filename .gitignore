@@ -1,0 +1,10 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+backend/**/*.db
+backend/**/*.db-shm
+backend/**/*.db-wal
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
